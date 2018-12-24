@@ -14,7 +14,7 @@ foods = %w[butter cheddar gouda]
 
 def find_the_cheese(foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  foods.collect {|item| return item if cheese_types.include? item}
+  foods.each {|item| return item if cheese_types.include? item}
 end
 
 find_the_cheese(foods)
