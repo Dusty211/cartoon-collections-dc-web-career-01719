@@ -10,7 +10,7 @@ def long_planeteer_calls(planeteer_calls)
   planeteer_calls.any? {|call| call.length > 4}
 end
 
-foods = %w[butter lettuce gouda]
+foods = %w[butter lettuce tires]
 
 def find_the_cheese(foods)
   # the array below is here to help
