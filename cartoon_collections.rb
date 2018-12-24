@@ -10,11 +10,12 @@ def long_planeteer_calls(planeteer_calls)
   planeteer_calls.any? {|call| call.length > 4}
 end
 
-foods = %w[butter cheddar gouda]
+#foods = %w[butter cheddar gouda]
 
 def find_the_cheese(foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  puts cheese_types.collect {|cheese| cheese if foods.include? cheese}
+  included_cheeses = foods.collect {|cheese| cheese if cheese_types.include? cheese}
+  included_cheeses[0]
 end
 
-find_the_cheese(foods)
+#find_the_cheese(foods)
