@@ -13,9 +13,8 @@ end
 foods = %w[butter lettuce tires]
 
 def find_the_cheese(foods)
-  # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  puts cheese_types.collect {|cheese| foods.include? cheese}.include? true
+  puts cheese_types.collect {|cheese| cheese if foods.include? cheese}
 end
 
 find_the_cheese(foods)
